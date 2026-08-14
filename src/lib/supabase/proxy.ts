@@ -29,22 +29,21 @@ export async function updateSession(request: NextRequest) {
           });
         },
       },
-    }
+    },
   );
 
-  const {
-    data: { claims },
-  } = await supabase.auth.getClaims();
+  const claimsResult = await supabase.auth.getClaims();
+  const claims = claimsResult?.data?.claims;
 
   const pathname = request.nextUrl.pathname;
 
   const isProtectedRoute =
-  pathname.startsWith("/dashboard") ||
-  pathname.startsWith("/setup-business") ||
-  pathname.startsWith("/transactions") ||
-  pathname.startsWith("/invoices") ||
-  pathname.startsWith("/customers") ||
-  pathname.startsWith("/settings");
+    pathname.startsWith("/dashboard") ||
+    pathname.startsWith("/setup-business") ||
+    pathname.startsWith("/transactions") ||
+    pathname.startsWith("/invoices") ||
+    pathname.startsWith("/customers") ||
+    pathname.startsWith("/settings");
 
   const isAuthRoute =
     pathname === "/login" ||
