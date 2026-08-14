@@ -1,3 +1,4 @@
+<img width="1899" height="832" alt="Screenshot 2026-08-14 232209" src="https://github.com/user-attachments/assets/1fbaae6d-e9b5-4f62-875b-923886ba25aa" />
 # 💰 HisabAI
 
 > **AI-Powered Financial Management for Small Businesses**
