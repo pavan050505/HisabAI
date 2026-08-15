@@ -71,7 +71,6 @@ Notify users about important financial events, unusual spending patterns, or oth
 Designed to work across desktop, tablet, and mobile devices.
 
 ---
-
 ## 🛠️ Tech Stack
 
 HisabAI is being developed using a modern full-stack architecture.
